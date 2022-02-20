@@ -20,6 +20,7 @@ func _process(_delta):
 	
 	if spots == 0 and !game_end:
 		game_end = true
+		$Player.celebrate()
 		yield(get_tree().create_timer(3.0), "timeout")
 		var next_level_path = "res://levels/level_%d.tscn" % next_level
 		get_tree().change_scene(next_level_path)

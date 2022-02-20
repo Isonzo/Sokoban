@@ -33,3 +33,7 @@ func move(dir):
 			position += vector_pos
 			return true
 	return false
+
+func celebrate():
+	$Sprite.play("celebrate")
+	
