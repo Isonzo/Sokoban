@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://objects/Spot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/Box.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/base_level.tscn" type="PackedScene" id=3]
+
+[node name="Main" instance=ExtResource( 3 )]
+
+[node name="Player" parent="." index="0"]
+position = Vector2( 72, 24 )
+
+[node name="TileMap" parent="." index="2"]
+tile_data = PoolIntArray( 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 196616, 0, 0, 196618, 0, 0, 196620, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262156, 0, 0, 327686, 0, 0, 327692, 0, 0, 393222, 0, 0, 393228, 0, 0, 458758, 0, 0, 458764, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0 )
+
+[node name="Spot" parent="Spots" index="0"]
+position = Vector2( 80, 32 )
+
+[node name="Spot2" parent="Spots" index="1" instance=ExtResource( 1 )]
+position = Vector2( 88, 48 )
+
+[node name="Spot3" parent="Spots" index="2" instance=ExtResource( 1 )]
+position = Vector2( 64, 48 )
+
+[node name="Box" parent="Boxes" index="0"]
+position = Vector2( 72, 32 )
+
+[node name="Box2" parent="Boxes" index="1" instance=ExtResource( 2 )]
+position = Vector2( 64, 40 )
+
+[node name="Box3" parent="Boxes" index="2" instance=ExtResource( 2 )]
+position = Vector2( 80, 48 )
