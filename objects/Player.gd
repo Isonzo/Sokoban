@@ -13,7 +13,7 @@ var inputs = {
 
 func _unhandled_input(event):
 	for dir in inputs.keys():
-		if event.is_action_pressed(dir):
+		if event.is_action_pressed(dir) and !get_parent().game_end:
 			if move(dir):
 				get_parent().moves += 1
 	if event.is_action_pressed("reset"):

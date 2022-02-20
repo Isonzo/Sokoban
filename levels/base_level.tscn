@@ -40,7 +40,6 @@ font_data = ExtResource( 3 )
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
-next_level = 1
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 72, 40 )
