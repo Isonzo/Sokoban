@@ -19,9 +19,4 @@ func move(dir):
 	if !ray.is_colliding():
 		position += vector_pos
 		return true
-	var collider = ray.get_collider()
-	if collider.is_in_group("box"):
-		if collider.move(dir):
-			position += vector_pos
-			return true
 	return false
